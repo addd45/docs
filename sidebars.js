@@ -1,140 +1,81 @@
 module.exports = {
   someSidebar: {
     Documentation: [
-      'v2/index',
+      'user/index',
+      'user/user_support_policy',
+      'user/whats_new_v4', 
       {
         type: 'category',
         label: 'Getting started',
         items: [
-          'v2/started/get_started',
-          'v2/started/development',
-          'v2/started/installation',
-          'v2/started/integration',
-          'v2/started/tips_and_tricks',
-          'v2/started/example',
-          'v2/started/hacs'
-
+          'user/started/get_started',
+          'user/started/development',
+          'user/started/installation',
+          'user/started/integration',
+          'user/started/example',
         ]
       },
       {
         type: 'category',
         label: 'AppModel',
         items: [
-          'v2/app_model/app_model',
-          'v2/app_model/app_model_instancing',
-          'v2/app_model/app_model_advanced_config',
-          'v2/app_model/app_model_context',
-          'v2/app_model/app_model_custom_logging'
+          'user/app_model/app_model',
+          'user/app_model/app_model_instancing',
+          'user/app_model/app_model_advanced_config',
+          'user/app_model/app_model_custom_logging',
+          'user/app_model/app_model_custom_config',
+          'user/app_model/app_model_moving_from_v3',
         ],
       },
       {
         type: 'category',
         label: 'HassModelApi',
         items: [
-          'v2/hass_model/hass_model',
-          'v2/hass_model/hass_model_codegen',
-          'v2/hass_model/hass_model_generated_entities',
-          'v2/hass_model/hass_model_generated_service',
-          'v2/hass_model/hass_model_working_with_entities',
-          'v2/hass_model/hass_model_events',
-          'v2/hass_model/hass_model_integration_servicecallback',
-          'v2/hass_model/hass_model_migration'
-        ]
-      },
-      {
-        type: 'category',
-        label: 'Extensions API',
-        items: [
-          {
-            type: 'category',
-            label: 'Scheduling',
-            items: [
-              'v2/extensions/scheduling/extensions_scheduling',
-            ]
-          },
-        ]
-      },
-      {
-        type: 'category',
-        label: 'Deprecated',
-        items: [
-          {
-            type: 'category',
-            label: 'Baseclass API',
-            items: [
-              'v2/api/api',
-              'v2/api/api_entities',
-              'v2/api/api_state',
-              'v2/api/api_gen_entities',
-              'v2/api/api_call_service',
-              'v2/api/api_events',
-              'v2/api/api_scheduler',
-              'v2/api/api_storage',
-              'v2/api/api_configuration',
-              'v2/api/api_callback',
-              'v2/api/api_app'
-            ],
-          },
-        ]
-      },
-    ],
-  },
-  someSidebar2: {
-    Documentation: [
-      'v3/index',
-      {
-        type: 'category',
-        label: 'Getting started',
-        items: [
-          'v3/started/get_started',
-          'v3/started/development',
-          'v3/started/installation',
-          'v3/started/integration',
-          'v3/started/example',
-          'v3/started/hacs'
-        ]
-      },
-      {
-        type: 'category',
-        label: 'AppModel',
-        items: [
-          'v3/app_model/app_model',
-          'v3/app_model/app_model_instancing',
-          'v3/app_model/app_model_advanced_config',
-          'v3/app_model/app_model_custom_logging',
-          'v3/app_model/app_model_moving_from_v2',
-        ],
-      },
-      {
-        type: 'category',
-        label: 'HassModelApi',
-        items: [
-          'v3/hass_model/hass_model',
-          'v3/hass_model/hass_model_codegen',
-          'v3/hass_model/hass_model_generated_entities',
-          'v3/hass_model/hass_model_generated_service',
-          'v3/hass_model/hass_model_working_with_entities',
-          'v3/hass_model/hass_model_events',
-          'v3/hass_model/hass_model_integration_servicecallback',
-          'v3/hass_model/hass_model_migration'
+          'user/hass_model/hass_model',
+          'user/hass_model/hass_model_codegen',
+          'user/hass_model/hass_model_generated_entities',
+          'user/hass_model/hass_model_generated_service',
+          'user/hass_model/hass_model_working_with_entities',
+          'user/hass_model/hass_model_subscribe_to_triggers',
+          'user/hass_model/hass_model_events',
+          'user/hass_model/hass_model_notifications',
+          'user/hass_model/hass_model_integration_servicecallback',
+          'user/hass_model/hass_model_registry',          
+          'user/hass_model/hass_model_service_with_returnvalue',
         ]
       },
       {
         type: 'category',
         label: 'Advanced',
         items: [
-          'v3/advanced/call_ha_api',
-          'v3/advanced/async_features',
-          'v3/advanced/dev_workflow3'
+          'user/advanced/call_ha_api',
+          'user/advanced/async_features',
+          'user/advanced/dev_workflow3',
+          'user/advanced/advanced_client',
         ]
       },
       {
         type: 'category',
         label: 'Extensions API',
         items: [
-          'v3/extensions/extensions_scheduling',
-          'v3/extensions/extensions_tts',
-          'v3/extensions/extensions_mqttEntityManager',
+          'user/extensions/extensions_scheduling',
+          'user/extensions/extensions_tts',
+          'user/extensions/extensions_mqttentitymanager',
+        ]
+      },
+      {
+        type:'category',
+        label: 'Tutorials',
+        items: [
+          'user/tutorials/publish_script',
+          'user/tutorials/webhost',
+        ]
+      },
+      {
+        type: 'category',
+        label: 'Troubleshooting',
+        items: [
+          'user/troubleshooting/trouble_call_service',
         ]
       },
     ],
@@ -142,6 +83,7 @@ module.exports = {
   "developer documentation": {
     "NetDaemon development": [
       "developer/developer",
+      "developer/architecture",
       "developer/vscode",
       "developer/vs",
       "developer/unit_test"
